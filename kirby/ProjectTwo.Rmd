@@ -2,9 +2,9 @@
 title: "Project Two"
 output: html_document
 --- 
-
+ 
 Due Oct. 18 at Midnight. 
-
+ 
 For this first part of the exam, you can either use `surveys_complete.csv` or your own data. If you are using your own data, you must have data in which you think you have a numerical predictor variable and a numerical response variable. If you are using `surveys_complete`, you can use weight and hindfoot_length for this.
 
 1) Load in your data. Which variable will you be using as a predictor, and which as a response? (5 pts)
@@ -26,17 +26,7 @@ surveys_complete <- read_csv("/cloud/project/data_output/surveys_complete.csv")
 ```
 
 ```
-#Answer here: Any i go to plot it gives me this error message: 
-Error in file(file, "wb") : cannot open the connection
-In addition: Warning message:
-In file(file, "wb") :
-  cannot open file '/home/rstudio-user/.rstudio/sessions/active/session-d620f15e/graphics-r3/6db7453d-f17b-4dc0-ac6e-5d2b54bed555.snapshot': No space left on device
-Graphics error: Plot rendering error
-Error in file(file, "wb") : cannot open the connection
-In addition: Warning message:
-In file(file, "wb") :
-  cannot open file '/home/rstudio-user/.rstudio/sessions/active/session-d620f15e/graphics-r3/1b26424c-1deb-450c-8eda-2a97074d91fe.snapshot': No space left on device
-Graphics error: Plot rendering error
+#Answer here: It appears to be slightly liinar. 
 ```
 
 
@@ -137,13 +127,13 @@ ggplot(surveys_complete, aes(x = sex, y = weight)) + geom_point(size= 0.5, aes(c
 1) Add and commit this document (5 pts)
 
 ```
-#Commands here
+#Commands here went into git pane, selected the projectwo doc and then hit commit, wrote my little msg
 ```
 
 2) Push your changes to github (10 pts)
 
 ```
-#Commands here
+#Commands here hit push and put in information. checked github and did it correctly.
 ```
 
 3) Make a pull request on my repo so I'm notified. *Do this last, when you are done and ready for me to see it* (10pts)
