@@ -10,6 +10,7 @@ By Wednesday, Sept. 30, document one function we've used in class for 3 bonus po
 
 Put your function on this table:
 
+
 | Function Name | Package, if any | Utility | Example  |
 |---------------|-----------------|---------|----------|
 | sum     | Base R    | Sum a range of numbers | sum(1:6) | 
