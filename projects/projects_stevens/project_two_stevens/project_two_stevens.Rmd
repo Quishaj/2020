@@ -32,7 +32,7 @@ ggplot(surveys_filtered, aes(x = hindfoot_length , y = weight)) +
 ```
 
 ```
-the data points appear to be grouped linearly across the three species plotted
+the data points appear to be reletivly grouped across the 24 species plotted
 ```
 
 
@@ -59,7 +59,7 @@ For every 1 mm increase in hindfoot length, we expect weight to increase by an a
 5) Plot the model on the graph. Increase the size of the text so it is comfortably readable at 5 feet. (5 pts)
 
 ```
-# Code here
+ggplot(surveys_filtered, aes(x = hindfoot_length, y = weight, color = species_id)) + geom_point(size = 0.5) + geom_smooth(method = "lm", color = "navy", size = 0.5, fill = "deeppink4") + labs(x = "Hindfoot Length (mm)", y = "Species Weight (g)", title = "Linear Regression to predict species weight by Hindfoot Length") 
 ```
 
 
@@ -82,7 +82,7 @@ qqline(augmented_fit$.resid, col = "red")
 
 ```{r}
 
-residuals test as non normal because its comparing all three species' residuals
+residuals test as non normal because its comparing all three species' residuals in this test
 ```
 
 7) If you are using `surveys_complete`: Is there interspecific variation in the linear model? Hint: look at our prior work with facet plots. (15 pts) 
@@ -90,7 +90,7 @@ residuals test as non normal because its comparing all three species' residuals
 If you are *not* using  `surveys_complete`: Do you think there are groupings within your data that may have a separate linear model? Try grouping the data by that variable and redoing the lm. (15 pts)
 
 ```{r}
-#code here
+ggplot(surveys_filtered, aes(x = hindfoot_length, y = weight, color = species_id)) + geom_point(size = 0.5) + geom_smooth(method = "lm", color = "navy", size = 0.5, fill = "deeppink4") + labs(x = "Hindfoot Length (mm)", y = "Species Weight (g)", title = "Linear Regression to predict species weight by Hindfoot Length") + facet_wrap(facets = vars(species_id))
 ```
 
 ## Part Two
@@ -150,13 +150,13 @@ ggplot(surveys_filtered_sex, aes(x = sex, y = weight, color=sex)) + geom_jitter(
 1) Add and commit this document (5 pts)
 
 ```
-#Commands here
+go to the git tab, click commit, add comment, close window.
 ```
 
 2) Push your changes to github (10 pts)
 
 ```
-#Commands here
+go to the git tab, click the green push button, put in username and password.  
 ```
 
 3) Make a pull request on my repo so I'm notified. *Do this last, when you are done and ready for me to see it* (10pts)
