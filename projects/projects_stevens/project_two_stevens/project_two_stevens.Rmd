@@ -10,13 +10,13 @@ For this first part of the exam, you can either use `surveys_complete.csv` or yo
 1) Load in your data. Which variable will you be using as a predictor, and which as a response? (5 pts)
 
 ```{r}
-> surveys <- read_csv("data/surveys.csv")
+surveys <- read_csv("../../../data/surveys.csv")
 
 surveys_filtered <- surveys %>%
-+     filter(!is.na(weight)) %>%
-+     filter(!is.na(hindfoot_length)) 
+     filter(!is.na(weight)) %>%
+     filter(!is.na(hindfoot_length)) 
 
-did the seccond part to filter out Na's
+#did the seccond part to filter out Na's
 ```
 
 ```
@@ -28,7 +28,7 @@ hindfoot length as my predictor and weight as my response.
 
 ```{r}
 ggplot(surveys_filtered, aes(x = hindfoot_length , y = weight)) +
-+     geom_point()
+     geom_point()
 ```
 
 ```
@@ -43,7 +43,7 @@ the data points appear to be grouped linearly across the three species plotted
 surveys_model <- lm(weight ~ hindfoot_length, data = surveys_filtered)
  
 
-> summary(surveys_model)
+ summary(surveys_model)
 ```
 
 4) Does the summary make sense? Does our model have good precitive power? Evaluate the residual standard error, intercept, and R-Squared in particular.  (10 pts)
@@ -59,6 +59,7 @@ For every 1 mm increase in hindfoot length, we expect weight to increase by an a
 5) Plot the model on the graph. Increase the size of the text so it is comfortably readable at 5 feet. (5 pts)
 
 ```
+#AMW: ??
 # Code here
 ```
 
@@ -90,6 +91,8 @@ residuals test as non normal because its comparing all three species' residuals
 If you are *not* using  `surveys_complete`: Do you think there are groupings within your data that may have a separate linear model? Try grouping the data by that variable and redoing the lm. (15 pts)
 
 ```{r}
+
+
 #code here
 ```
 
@@ -104,7 +107,7 @@ In this portion, you are free to use your own data if you have a categorical pre
  surveys_filtered_sex <- surveys_filtered %>%
          filter(!is.na(sex)) 
 
-> ggplot(surveys_filtered_sex, aes(x = sex , y = weight)) +
+ ggplot(surveys_filtered_sex, aes(x = sex , y = weight)) +
          geom_point()
 ```
 
@@ -112,7 +115,7 @@ In this portion, you are free to use your own data if you have a categorical pre
 
 ```{r}
 ggplot(surveys_filtered_sex, aes(x = sex, y = weight, color=sex)) + geom_jitter()
-
+# AMW: The below didn't work for me? 
 aov(model_fit_sex) -> anova_model_fit_sex
 
 summary(model_fit_sex)
