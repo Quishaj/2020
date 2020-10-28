@@ -50,14 +50,14 @@ no_na <- occurences$data %>%
 
 ```
 
-
 And finally, we will plot the data using `leaflet`
 
 ```{r}
-k <- leaflet::leaflet(no_na) %>% 
-  addTiles() %>% 
-  addMarkers(~decimalLongitude, ~decimalLatitude, popup = no_na$scientificName)
+library(leaflet)
 
+leaflet(no_na) %>% 
+  addTiles() %>% 
+  addMarkers(~decimalLongitude, ~decimalLatitude)  
 ```
 
 This looks much like plotting with `ggplot` and tidyverse. That's because leaflet is based on the same principles. We establish a canvas and the data in the first line, then we add tiles (the actual map we will use), and then we add our points. When we think about it, this is quite similar to establishing a ggplot canvas, the axes, and the points to plot.
@@ -222,6 +222,25 @@ no_na %>%
 
 ```
 
+
+## Legends:
+
+```{r}
+
+library(leaflet)
+pal <- colorFactor(
+  palette = "YlGnBu",
+  domain = mega_df$scientificName
+)
+leaflet(mega_df) %>% 
+  addTiles() %>% 
+  addCircleMarkers(~decimalLongitude, ~decimalLatitude, color = ~pal(scientificName))  %>%
+  addLegend("bottomright", pal = pal, values = ~scientificName,
+    title = "Scientific Name",
+    opacity = 1
+  )
+
+```
 ### Extra map color options (base maps)
 
 https://rstudio.github.io/leaflet/basemaps.html
@@ -286,17 +305,24 @@ subset_data <- no_bold %>%
 Now, let's use ROTL to make sure we don't have spelling errors.
 ```{r}
 reconciled_names <- rotl::tnrs_match_names(unique(subset_data$genusSpecies))
-good_names <-  reconciled_names %>%
-  drop_na()
 
 ```
+You'll notice that a couple of the taxa have undergone taxonomic revision. We can replace the out of date names like so:
+
+```{r}
+
+subset_data$genusSpecies[subset_data$genusSpecies == "Atta_colombica"] <- "Atta_columbica"
+subset_data$genusSpecies[subset_data$genusSpecies == "Atta_mexicana"] <- "Atya_scabra"
+```
+
+This isn't crucial right now, but later in the lesson a mismatch of tip labels and GBIF coordinates will be fatal.
 
 
 Now, we will query our tree from OpenTree.
 
 ```{r}
 
-tree <- rotl::tol_induced_subtree(good_names$ott_id, label="name")
+tree <- rotl::tol_induced_subtree(reconciled_names$ott_id, label="name")
 ```
 
 
@@ -353,14 +379,19 @@ In our case, we will use `rexp` to make the draws, and we will map them to a new
 ```{r}
 tree$edge.length <- rexp(tree$Nnode*2)
 tree$edge.length
+obj<-phylo.to.map(tree,only_lat_long, plot=FALSE, direction="rightwards")
+
 
 ```
+
 
 
 Now let's try that map again. 
 
-```{r, eval=FALSE}
+```{r}
 
 plot(obj,direction="rightwards",colors=cols,cex.points=c(0,1.5),
     pts=FALSE)
 ```
+
+
