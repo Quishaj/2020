@@ -1,0 +1,8 @@
+---
+title: "HomeworkSeven"
+output: html_document
+---
+
+Write your second function. Document it (with @params, @return). Write a test for it. Share it with me via pull request.
+
+# Due Nov. 13, 5 pm
