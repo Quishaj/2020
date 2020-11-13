@@ -20,8 +20,8 @@ Lectures will be posted the day before they are given by 5 pm.
 | Week of Oct. 12  | [Linear Models](https://biologicaldataanalysis2019.github.io/2020/articles/08_linear_models.html) | [Homework 5](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkFive.html) | [Project Two](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectTwo.html) | 
 | Week of Oct. 18 | [Tree Of Life](https://biologicaldataanalysis2019.github.io/2020/articles/09_Tree_of_life.html) | Nothing | Nothing |
 | Week of Oct. 26 | [Exploration Activity](https://biologicaldataanalysis2019.github.io/2020/articles/10_GBIF_and_Location.html) | [Homework 6](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSix.html) | Nothing  |
-| Week of Nov. 2  | Packages  | Homework Seven | Exploration Summary |  
-| Week of Nov. 9  | [Maps and Location](https://biologicaldataanalysis2019.github.io/2020/articles/09_GBIF_and_Location.html) | Project Three | Homework Seven | 
-| Week of Nov. 16  | Testing | Homework 8 | Project Three |
+| Week of Nov. 2  | [Data cleaning and mapping](https://biologicaldataanalysis2019.github.io/2020/articles/TeagueTest.html)  | [Homework 7](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSeven.html)| [Homework 6](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSix.html) |  
+| Week of Nov. 9  | Packaging | [Project Three](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectThree.html) | [Homework 7](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSeven.html) | 
+| Week of Nov. 16  | Tutorials & Communication | Homework 8 | [Project Three](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectThree.html)|
 | Week of Nov. 23 | Final Grab bag | Homework 9 | Homework 8 |
 | Final | Week of Dec, we will present final presentations | | 

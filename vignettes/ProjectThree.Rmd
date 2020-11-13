@@ -1,0 +1,39 @@
+---
+title: "ProjectThree"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Everybody
+
+## Part One
+
+Part One of project three will be to write two functions. One must be to query and/or process data, one must be to visualize data.
+
+Each function must be in its own .R script, and have documentation (@param, @return if appropriate, description of the function and inputs)
+
+Each function should have a pre- and/or post-condition.
+
+## Part Two
+
+Push the package to GitHub and email me the link
+
+## Part Three
+
+Package should install with 
+
+```{r, eval=FALSE}
+
+devtools::install_github("yourUsername/PackageName")
+
+```
+
+
+# MS Students
+
+There's no extra stuff on this one. Since you're working with your own data, make sure I have a copy of the dataset you're using.
+
+
