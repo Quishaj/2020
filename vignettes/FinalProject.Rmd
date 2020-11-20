@@ -1,0 +1,28 @@
+---
+title: "Final Project"
+output: html_document
+---
+
+# Final Project Parameters
+
+## Tutorial Document
+
+1. Must provide working installation instructions
+2. Must provide working instructions to download tutorial document
+3. Must document three functions in package
+4. Package must contain data required to make the tutorial run
+5. Tutorial should be on your package website so everyone can access it
+
+These five points are worth 75% of the grade
+
+## During the presentation period (Thursday, December 3, 12:30 p.m. - 2:30 p.m. )
+
+1. When presenting your tutorial:
+  - Present the rationale for why the functions you wrote are needed
+  - Present the three functions
+  - Viewers should be able to follow along with the code through the document
+2. Ask questions of other's presentations (i.e., be an engaged audience member)
+
+These two points are worth the final 25%. 
+
+I'm not going to push a time limit on presentations. They should be sufficient to work through your code.

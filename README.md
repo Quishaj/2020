@@ -22,6 +22,6 @@ Lectures will be posted the day before they are given by 5 pm.
 | Week of Oct. 26 | [Exploration Activity](https://biologicaldataanalysis2019.github.io/2020/articles/10_GBIF_and_Location.html) | [Homework 6](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSix.html) | Nothing  |
 | Week of Nov. 2  | [Data cleaning and mapping](https://biologicaldataanalysis2019.github.io/2020/articles/TeagueTest.html)  | [Homework 7](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSeven.html)| [Homework 6](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSix.html) |  
 | Week of Nov. 9  | Packaging | [Project Three](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectThree.html) | [Homework 7](https://biologicaldataanalysis2019.github.io/2020/articles/HomeworkSeven.html) | 
-| Week of Nov. 16  | Tutorials & Communication | Homework 8 | [Project Three](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectThree.html)|
-| Week of Nov. 23 | Final Grab bag | Homework 9 | Homework 8 |
-| Final | Week of Dec, we will present final presentations | | 
+| Week of Nov. 16  | Tutorials & Communication | [Final Project](https://biologicaldataanalysis2019.github.io/2020/articles/FinalProject.html) | [Project Three](https://biologicaldataanalysis2019.github.io/2020/articles/ProjectThree.html)|
+| Week of Nov. 23 | Final Worktime | Nothing | Nothin |
+| Final | Thursday, December 3, 12:30 p.m. - 2:30 p.m. [Final presentations ](https://biologicaldataanalysis2019.github.io/2020/articles/FinalProject.html) ) | | 
